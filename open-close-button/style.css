@@ -1,0 +1,29 @@
+body {
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+input {
+  appearance: none;
+  background-color: #24a0ed;
+  border-radius: 8px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  cursor: pointer;
+  padding: 1em 0.2em;
+  min-width: 130px;
+  text-align: center;
+}
+
+input::before {
+  content: "Open";
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+input:checked::before {
+  content: "Close";
+}
