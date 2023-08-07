@@ -1,0 +1,50 @@
+body {
+  background-color: #252525;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 14px 0;
+}
+
+li a {
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+}
+
+li a::after {
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  height: 4px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 150ms ease; 
+  /* 
+  # you can also use transform for this animation, i just prefer using width for simplier code :D
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease; 
+  */
+}
+
+li a:hover::after {
+  width: 100%;
+  /* transform: scaleY(1); */
+}
