@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  background: linear-gradient(90deg, #2cd9ff, #7effb2);
+  background-size: 400% 400%;
+  border-radius: 15px;
+  min-height: 40%;
+  min-width: 80%;
+  animation: anim 2.5s infinite ease-in-out;
+}
+
+@keyframes anim {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
