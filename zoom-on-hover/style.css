@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.wrapper {
+  border-radius: 18px;
+  cursor: pointer;
+  height: 25rem;
+  width: 25rem;
+  overflow: hidden;
+}
+
+.wrapper img {
+  filter: grayscale(90%);
+  height: 100%;
+  width: 100%;
+  transition: all 300ms ease; 
+}
+
+.wrapper:hover img {
+  filter: grayscale(0);
+  transform: scale(1.5);
+}
